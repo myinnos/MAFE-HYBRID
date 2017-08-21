@@ -1,0 +1,36 @@
+
+<ion-header >
+  <ion-navbar>
+    <ion-title>MAFE</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+  <ion-list>
+
+    <ion-item>
+      <ion-label floating>First Name</ion-label>
+      <ion-input type="text" value="{{firstName_Holder}}" #firstName></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label floating>Last Name</ion-label>
+      <ion-input type="text" value="{{lastName_Holder}}" #lastName></ion-input>
+    </ion-item>
+
+    <div padding>
+      <button ion-button block (click)="getMafe()">GET GENDER</button>
+    </div>
+
+  </ion-list>
+
+    <ion-card text-center>
+      <ion-card-content>
+        <ion-img width="140" height="80" src="{{img_gender}}"></ion-img>
+        <br>
+        {{posts}}
+      </ion-card-content>
+    </ion-card>
+
+</ion-content>
