@@ -63,6 +63,7 @@ this.httpProvider.getJsonData("https://api.namsor.com/onomastics/api/json/gender
         //console.log("Success : "+ result.gender);
    },
    err =>{
+     loading.dismiss();
      console.error("Error : "+err);
      this.presentToast("Network Issue! Please check your internet and continue!");
    } ,
